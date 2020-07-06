@@ -1,0 +1,56 @@
+$timeColor: #72adc2;
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header {
+	@include flex-between;
+	padding: 80px 0;
+	&__time {
+		@include flex-center;
+		width: 90px;
+		height: 90px;
+		border: 3px solid $timeColor;
+		color: $timeColor;
+		font-weight: bold;
+		border-radius: 50%;
+		font-size: 24px;
+	}
+}
+
+
+
+/* ----------- Media queries */
+@media (min-width: 576px) and (max-width: 767px) {
+	.header {
+		&__logo {
+			img {
+				width: 150px;
+			}
+		}
+	}
+}
+@media (min-width: 320px) and (max-width: 575px) {
+	.header {
+		padding: 24px 0;
+		&__logo {
+			img {
+				width: 80px;
+			}
+		}
+		&__time {
+			width: 70px;
+			height: 70px;
+			font-size: 16px;
+		}
+	}
+}
+/* ----------- Media queries */
