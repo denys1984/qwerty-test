@@ -6,7 +6,7 @@ class QuestionBlock extends React.Component {
 		return (
 			<div className="questionblock">
 
-				<form className="questionblock__form" action="textarea1.php" method="post">
+				<form className="questionblock__form" action="" method="">
 					<div className="questionblock__title">
 						Что произойдет, если entityName будет 
 						названием несуществующей таблицы
